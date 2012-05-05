@@ -1,4 +1,4 @@
 DesignTemplate
 ==============
 
-some design template
+1) Template for cmake
