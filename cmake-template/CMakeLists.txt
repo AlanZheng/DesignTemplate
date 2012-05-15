@@ -37,7 +37,7 @@ set(GTEST_LIBRARY ${PROJECT_SOURCE_DIR}/../../googletest-svn/build-aux)
 set(GTEST_MAIN_LIBRARY ${PROJECT_SOURCE_DIR}/../../googletest-svn/build-aux)
 set(GTEST_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/../../googletest-svn/include)
 
-add_definitions(-Wall -pthread -lcmakeexample -lgtest -lgtest_main)
+add_definitions(-Wall -pthread)
 
 set(COMMON_INCLUDES ${PROJECT_SOURCE_DIR}/include ${PROJECT_SOURCE_DIR}/../../googletest-svn/include)
 
