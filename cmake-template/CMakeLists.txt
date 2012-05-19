@@ -41,14 +41,14 @@ add_definitions(-Wall -pthread)
 
 set(COMMON_INCLUDES ${PROJECT_SOURCE_DIR}/include ${PROJECT_SOURCE_DIR}/../../googletest-svn/include)
 
-enable_testing()
+#enable_testing()
 
 add_subdirectory(src)
 add_subdirectory(src_test)
 
-#INSTALL(TARGETS ExecutableTarget DESTINATION ${PROJECT_NAME_STR})
+#INSTALL(TARGETS ${PROJECT_NAME_STR} DESTINATION ${PROJECT_NAME_STR})
  
-SET(CPACK_GENERATOR "GZ")
+SET(CPACK_GENERATOR "RPM")
 SET(CPACK_DEBIAN_PACKAGE_MAINTAINER "Alan Zheng") #required
  
 INCLUDE(CPack)
