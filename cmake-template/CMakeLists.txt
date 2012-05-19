@@ -45,3 +45,10 @@ enable_testing()
 
 add_subdirectory(src)
 add_subdirectory(src_test)
+
+#INSTALL(TARGETS ExecutableTarget DESTINATION ${PROJECT_NAME_STR})
+ 
+SET(CPACK_GENERATOR "GZ")
+SET(CPACK_DEBIAN_PACKAGE_MAINTAINER "Alan Zheng") #required
+ 
+INCLUDE(CPack)
